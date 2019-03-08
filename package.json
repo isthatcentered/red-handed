@@ -7,8 +7,11 @@
     "scripts": {
         "test": "tsnd --respawn src/test.ts",
         "start": "yarn test",
-        "prebuild": "rm -rf ./dist",
-        "build": ""
+        "cleanup": "rm -rf ./dist",
+        "types:check": "yarn tsc --noemit",
+        "types:make": " yarn tsc --emitDeclarationOnly",
+        "prebuild": "yarn cleanup && yarn types:check && yarn types:make",
+        "build": "parcel build ./src/index.ts --target node --no-minify"
     },
     "keywords": [
         "promise-debug",
@@ -28,6 +31,7 @@
     },
     "license": "ISC",
     "devDependencies": {
+        "parcel-bundler": "^1.12.0",
         "ts-node-dev": "^1.0.0-pre.32",
         "typescript": "^3.3.3333"
     },
