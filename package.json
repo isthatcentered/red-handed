@@ -1,0 +1,27 @@
+{
+    "name": "redhanded",
+    "version": "1.0.0@alpha",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "promise-debug",
+        "promise",
+        "log",
+        "debug",
+        "value",
+        "try",
+        "catch",
+        "console",
+        "console.log"
+    ],
+    "author": "Edouard Penin <e.peninb@gmail.com>",
+    "homepage": "https://github.com/isthatcentered/redhanded#readme",
+    "bugs": {
+        "url": "https://github.com/isthatcentered/redhanded/issues"
+    },
+    "license": "ISC"
+}
