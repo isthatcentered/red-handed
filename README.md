@@ -1,6 +1,8 @@
 # Red handed
 Debug your promises value the lazy way 🥳
 
+@todo: Image of log
+
 ```typescript
 import {uncover} from "redhanded"
 
