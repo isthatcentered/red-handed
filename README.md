@@ -1,17 +1,17 @@
 # Red handed
 Debug your promises value the lazy way 🥳
 
-@todo: Image of log
+![redhanded debugs your promises values in the prettiest way](https://github.com/isthatcentered/red-handed/blob/master/snapshot.jpg)
 
 ```typescript
 import {uncover} from "redhanded"
 
 const thing = stuffThatReturnsAPromise()
-	.then(res => doComplicatedStuff(res, thing))
+	.then(res => saveUser(res, thing))
 
-	.then(uncover("After doComplicatedStuff()")) // Logs the value it gets and returns it  
+	.then(uncover("AfterUserSaved")) // Logs the value it gets and returns it  
 	
-	.then(doComplicatedStuffResult => doOtherStuff(doComplicatedStuffResult)) 
+	.then(resultOfSaveUser => doOtherStuff(resultOfSaveUser)) 
 
 ```
 
