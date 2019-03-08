@@ -3,6 +3,13 @@ Debug your promises value the lazy way 🥳
 
 ![redhanded debugs your promises values in the prettiest way](https://github.com/isthatcentered/red-handed/blob/master/snapshot.jpg)
 
+## Install
+```bash
+npm install redhanded --save  
+```
+*Note, the typings are included in the package, no need to install @types/...*
+
+## Enjoy
 ```typescript
 import {uncover} from "redhanded"
 
