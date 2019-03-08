@@ -10,8 +10,8 @@ test()
 async function test()
 {
 	const promise: Promise<any> = Promise.resolve( {
-		username: "Batman",
-		password: "admin",
+		email:    "batman@brucewayne.com",
+		password: "imbatmanlolz",
 	} )
 	
 	console.log( "" )
@@ -27,6 +27,17 @@ async function test()
 	
 	await promise
 		.then( uncover() )
+	
+	
+	
+	console.log( "" )
+	console.log( "" )
+	console.log( "Not objects:" )
+	uncover()( "res" )
+	uncover()( 1 )
+	uncover()( null )
+	uncover()( undefined )
+	uncover()( [] )
 	
 }
 

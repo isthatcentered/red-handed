@@ -1,9 +1,10 @@
 import chalk from "chalk"
+import prettyLog from "json-stringify-pretty-compact"
 
 
 
 
-export function uncover<T>( tag: string = "" ): ( res: T ) => Promise<T>
+export function uncover<T = any>( tag: string = "" ): ( res: T ) => Promise<T>
 {
 	const _tag = chalk.bold( tag )
 	
@@ -11,11 +12,15 @@ export function uncover<T>( tag: string = "" ): ( res: T ) => Promise<T>
 		
 		console.log( `👋 [${uncover.label}] ${_tag}` )
 		
-		console.log( res )
+		console.log( prettyLog( res, { maxLength: 0 } ) )
 		
+		console.log( "" )
 		return Promise.resolve( res )
 	}
 }
 
 
 uncover.label = chalk.cyan( "DEBUG" )
+
+
+

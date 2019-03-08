@@ -5,7 +5,10 @@
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "test": "tsnd --respawn src/test.ts"
+        "test": "tsnd --respawn src/test.ts",
+        "start": "yarn test",
+        "prebuild": "rm -rf ./dist",
+        "build": ""
     },
     "keywords": [
         "promise-debug",
@@ -25,9 +28,12 @@
     },
     "license": "ISC",
     "devDependencies": {
-        "@types/chalk": "^2.2.0",
-        "chalk": "^2.4.2",
         "ts-node-dev": "^1.0.0-pre.32",
         "typescript": "^3.3.3333"
+    },
+    "dependencies": {
+        "@types/chalk": "^2.2.0",
+        "chalk": "^2.4.2",
+        "json-stringify-pretty-compact": "^2.0.0"
     }
 }
