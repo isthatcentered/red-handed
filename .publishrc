@@ -1,3 +1,7 @@
 {
-    "prePublishScript": "build",
+    "prePublishScript": "yarn build",
+    "validations": {
+        "vulnerableDependencies": false
+    }
+
 }

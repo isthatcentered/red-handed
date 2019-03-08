@@ -11,7 +11,7 @@
     "types:check": "yarn tsc --noemit",
     "types:make": " yarn tsc --emitDeclarationOnly",
     "prebuild": "yarn cleanup && yarn types:check && yarn types:make",
-    "build": "parcel build ./src/index.ts --target node --no-minify",
+    "build": "yarn parcel build ./src/index.ts --target node --no-minify",
     "publish:test": "yarn publish-please --dry-run",
     "prepublishOnly": "publish-please guard && yarn publish-please guard",
     "publish-please": "publish-please"
