@@ -1,6 +1,6 @@
 {
   "name": "redhanded",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Debug your promises value the lazy way 🥳",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
