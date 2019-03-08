@@ -1,7 +1,7 @@
 # Red handed
 Debug your promises value the lazy way 🥳
 
-![redhanded debugs your promises values in the prettiest way](https://github.com/isthatcentered/red-handed/blob/master/snapshot.jpg)
+![redhanded debugs your promises values in the prettiest way](./snapshot.jpg)
 
 ## Install
 ```bash
