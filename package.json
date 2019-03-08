@@ -1,6 +1,6 @@
 {
   "name": "redhanded",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Debug your promises value the lazy way 🥳",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,9 +12,7 @@
     "types:make": " yarn tsc --emitDeclarationOnly",
     "prebuild": "yarn cleanup && yarn types:check && yarn types:make",
     "build": "yarn parcel build ./src/index.ts --target node --no-minify",
-    "publish:test": "yarn publish-please --dry-run",
-    "prepublishOnly": "publish-please guard && yarn publish-please guard",
-    "publish-please": "publish-please"
+    "publish:test": "yarn publish-please --dry-run"
   },
   "keywords": [
     "promise-debug",
