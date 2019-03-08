@@ -28,9 +28,9 @@
     "console.log"
   ],
   "author": "Edouard Penin <e.peninb@gmail.com>",
-  "homepage": "https://github.com/isthatcentered/redhanded#readme",
+  "homepage": "https://github.com/isthatcentered/red-handed#readme",
   "bugs": {
-    "url": "https://github.com/isthatcentered/redhanded/issues"
+    "url": "https://github.com/isthatcentered/red-handed/issues"
   },
   "license": "ISC",
   "devDependencies": {
