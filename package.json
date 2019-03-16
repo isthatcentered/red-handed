@@ -1,43 +1,43 @@
 {
-  "name": "redhanded",
-  "version": "1.0.2",
-  "description": "Debug your promises value the lazy way 🥳",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "tsnd --respawn src/test.ts",
-    "start": "yarn test",
-    "cleanup": "rm -rf ./dist",
-    "types:check": "yarn tsc --noemit",
-    "types:make": " yarn tsc --emitDeclarationOnly",
-    "prebuild": "yarn cleanup && yarn types:check && yarn types:make",
-    "build": "yarn parcel build ./src/index.ts --target node --no-minify",
-    "publish:test": "yarn publish-please --dry-run"
-  },
-  "keywords": [
-    "promise-debug",
-    "promise",
-    "log",
-    "debug",
-    "value",
-    "try",
-    "catch",
-    "console",
-    "console.log"
-  ],
-  "author": "Edouard Penin <e.peninb@gmail.com>",
-  "homepage": "https://github.com/isthatcentered/red-handed#readme",
-  "bugs": {
-    "url": "https://github.com/isthatcentered/red-handed/issues"
-  },
-  "license": "ISC",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.0",
-    "ts-node-dev": "^1.0.0-pre.32",
-    "typescript": "^3.3.3333"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "json-stringify-pretty-compact": "^2.0.0"
-  }
+    "name": "redhanded",
+    "version": "1.0.2",
+    "description": "Debug your promises value the lazy way 🥳",
+    "umd:main": "dist/index.umd.js",
+    "module": "dist/index.mjs",
+    "main": "dist/index.js",
+    "source": "src/index.ts",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "test": "tsnd --respawn src/test.ts",
+        "start": "yarn test & microbundle watch",
+        "build": "microbundle --target=node",
+        "types:check": "yarn tsc --noemit",
+        "types:make": " yarn tsc --emitDeclarationOnly"
+    },
+    "keywords": [
+        "promise-debug",
+        "promise",
+        "log",
+        "debug",
+        "value",
+        "try",
+        "catch",
+        "console",
+        "console.log"
+    ],
+    "author": "Edouard Penin <e.peninb@gmail.com>",
+    "homepage": "https://github.com/isthatcentered/red-handed#readme",
+    "bugs": {
+        "url": "https://github.com/isthatcentered/red-handed/issues"
+    },
+    "license": "ISC",
+    "devDependencies": {
+        "microbundle": "^0.11.0",
+        "ts-node-dev": "^1.0.0-pre.32",
+        "typescript": "^3.3.3333"
+    },
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "json-stringify-pretty-compact": "^2.0.0"
+    }
 }
