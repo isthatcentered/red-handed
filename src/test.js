@@ -1,16 +1,12 @@
-import { uncover } from "./index"
-
-
-
+const { uncover } = require( "../dist/index" )
 
 test()
 
 
-
 async function test()
 {
-	const promise: Promise<any> = Promise.resolve( {
-		email:    "batman@brucewayne.com",
+	const promise = Promise.resolve( {
+		email: "batman@brucewayne.com",
 		password: "imbatmanlolz",
 	} )
 	
@@ -27,7 +23,6 @@ async function test()
 	
 	await promise
 		.then( uncover() )
-	
 	
 	
 	console.log( "" )

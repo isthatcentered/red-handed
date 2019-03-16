@@ -1,6 +1,5 @@
-import chalk from "chalk"
-import prettyLog from "json-stringify-pretty-compact"
-
+const chalk = require( "chalk" )
+const prettyLog = require( "json-stringify-pretty-compact" )
 
 
 
