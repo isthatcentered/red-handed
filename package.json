@@ -32,7 +32,7 @@
     },
     "license": "ISC",
     "devDependencies": {
-        "microbundle": "^0.11.0",
+        "microbundle": "^0.12.0",
         "nodemon": "^1.18.10",
         "ts-node-dev": "^1.0.0-pre.32",
         "typescript": "^3.3.3333"
